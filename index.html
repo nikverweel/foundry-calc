@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Foundry Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/res/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="/res/logo.png">
+                <p>Version 0.2</p>
+            </div>
+
+            <input type="text", id="search", placeholder="Search items...">
+
+            <div class="categories">
+                <h3>Item Categories</h3>
+                <ul>
+                    <li data-category="all" class="active">All</li>
+                    <li data-category="science">Science Packs</li>
+                    <li data-category="robot">Drones & Robots</li>
+                    <li data-category="craft">Crafting Materials</li>
+                    <li data-category="ore">Ores & Liquids</li>
+                    <li data-category="building">Buildings</li>
+                </ul>
+            </div>
+
+            <div class="item-grid" id="itemGrid">
+                <!-- Items injected by JS -->
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="content">
+            <h1>Recipe Calculator</h1>
+            <p>Select an item on the left to begin.</p>
+        </main>
+        
+    </div>
+
+    <div class="credits-box">
+        <p>Icons by FOUNDRY - not my creations</p>
+        <p>Recipe information obtained from the <a href="https://wiki.foundry-game.com/index.php?title=Foundry_Wiki" target="_blank">FOUNDRY Wiki</a></p>
+        <p>Calculator by Nik Verweel - <a href="https://github.com/nikverweel/foundry-calc/issues" target="_blank">Report issues here</a></p>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#d46001', 'L4L11LVM7E');kofiwidget2.draw();</script> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
