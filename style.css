@@ -162,11 +162,12 @@ body, html {
 }
 
 .tool-btn img {
-    height: 48px;
+    height: 42px;
+    width: 42px;
     object-fit: contain;
 }
 
-.furnace-menu {
+.smelter-menu {
     position: fixed;
     bottom: 15px;
     right: -240px;
@@ -180,7 +181,7 @@ body, html {
     padding: 10px;
 }
 
-.furnace-menu.open {
+.smelter-menu.open {
     right: 93px
 }
 
@@ -210,4 +211,9 @@ body, html {
 
 .credits-box a:hover {
     color: #dd6e14;
+}
+
+.smelter-menu h4 {
+    padding: 0;
+    margin: 0;
 }

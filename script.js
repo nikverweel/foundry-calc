@@ -1,7 +1,7 @@
 const grid = document.getElementById("itemGrid");
 const search = document.getElementById("search");
 const categoryButtons = document.querySelectorAll(".categories li");
-const furnaceBtn = document.getElementById("furnaceBtn");
+const smelterBtn = document.getElementById("smelterBtn");
 
 let items = [];
 
@@ -58,6 +58,6 @@ search.addEventListener("input", () => {
 renderItems();
 
 // Tools Menu Logic
-furnaceBtn.addEventListener("click", () => {
-  furnaceMenu.classList.toggle("open");
+smelterBtn.addEventListener("click", () => {
+  smelterMenu.classList.toggle("open");
 });
