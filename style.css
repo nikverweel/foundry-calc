@@ -90,7 +90,7 @@ body, html {
 }
 
 .item-grid::-webkit-scrollbar-thumb {
-  background-color: #666; 
+  background-color: #66666691; 
   border-radius: 3px;      
 }
 
@@ -123,10 +123,71 @@ body, html {
     padding: 20px;
 }
 
+.tools-buttons {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    z-index: 1000;
+    background: #d8d1d1;
+    border: 1px solid #999797;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.tools-buttons h4 {
+    font-size: 13px;
+    padding: 3px;
+    margin: 0;
+}
+
+.tool-btn {
+    width: 48px;
+    height: 48px;
+    background: #b9b2b2;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s
+}
+
+.tool-btn:hover {
+    background: #cac3c3;
+}
+
+.tool-btn img {
+    height: 48px;
+    object-fit: contain;
+}
+
+.furnace-menu {
+    position: fixed;
+    bottom: 15px;
+    right: -240px;
+    width: 200px;
+    z-index: 999;
+    background: #d8d1d1;
+    border: 1px solid #999797;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    padding: 10px;
+}
+
+.furnace-menu.open {
+    right: 93px
+}
+
 .credits-box {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background: #d8d1d1;
     padding: 10px 10px;
     border-radius: 10px;

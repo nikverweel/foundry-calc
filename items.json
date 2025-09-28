@@ -1,0 +1,1395 @@
+[
+  {
+    "id": "advanced_machinery_parts",
+    "name": "Advanced Machinery Parts",
+    "category": "craft",
+    "icon": "/res/icons/adv_mach_parts.png",
+    "recipe": []
+  },
+  {
+    "id": "advanced_smelter",
+    "name": "Advanced Smelter",
+    "category": "building",
+    "icon": "/res/icons/adv_smelter.png",
+    "recipe": []
+  },
+  {
+    "id": "advanced_xenoferrite_ignium_ore_blend",
+    "name": "Advanced Xenoferrite Ignium Ore Blend",
+    "category": "ore",
+    "icon": "/res/icons/advanced_xenoferrite_ignium_ore_blend.png",
+    "recipe": []
+  },
+  {
+    "id": "air",
+    "name": "Air",
+    "category": "ore",
+    "icon": "/res/icons/air.png",
+    "recipe": []
+  },
+  {
+    "id": "air_intake_base",
+    "name": "Air Intake Base",
+    "category": "building",
+    "icon": "/res/icons/air_intake_base.png",
+    "recipe": []
+  },
+  {
+    "id": "assembler_i",
+    "name": "Assembler I",
+    "category": "building",
+    "icon": "/res/icons/assembler_i.png",
+    "recipe": []
+  },
+  {
+    "id": "assembler_ii",
+    "name": "Assembler II",
+    "category": "building",
+    "icon": "/res/icons/assembler_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "assembler_iii",
+    "name": "Assembler III",
+    "category": "building",
+    "icon": "/res/icons/assembler_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_merger",
+    "name": "Assembly Line Merger",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_merger.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_painter",
+    "name": "Assembly Line Painter",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_painter.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_producer",
+    "name": "Assembly Line Producer",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_producer.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_rail",
+    "name": "Assembly Line Rail",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_rail.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_splitter",
+    "name": "Assembly Line Splitter",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_splitter.png",
+    "recipe": []
+  },
+  {
+    "id": "assembly_line_start",
+    "name": "Assembly Line Start",
+    "category": "building",
+    "icon": "/res/icons/assembly_line_start.png",
+    "recipe": []
+  },
+  {
+    "id": "battery_(large)",
+    "name": "Battery (Large)",
+    "category": "building",
+    "icon": "/res/icons/battery_large.png",
+    "recipe": []
+  },
+  {
+    "id": "battery_(small)",
+    "name": "Battery (Small)",
+    "category": "building",
+    "icon": "/res/icons/battery_small.png",
+    "recipe": []
+  },
+  {
+    "id": "biomass",
+    "name": "Biomass",
+    "category": "craft",
+    "icon": "/res/icons/biomass.png",
+    "recipe": []
+  },
+  {
+    "id": "biomass_burner",
+    "name": "Biomass Burner",
+    "category": "building",
+    "icon": "/res/icons/biomass_burner.png",
+    "recipe": []
+  },
+  {
+    "id": "blast_furnace_base",
+    "name": "Blast Furnace Base",
+    "category": "building",
+    "icon": "/res/icons/blast_furnace_base.png",
+    "recipe": []
+  },
+  {
+    "id": "blast_furnace_slag",
+    "name": "Blast Furnace Slag",
+    "category": "ore",
+    "icon": "/res/icons/blast_furnace_slag.png",
+    "recipe": []
+  },
+  {
+    "id": "boiler",
+    "name": "Boiler",
+    "category": "building",
+    "icon": "/res/icons/boiler.png",
+    "recipe": []
+  },
+  {
+    "id": "building_block",
+    "name": "Building Block",
+    "category": "building",
+    "icon": "/res/icons/building_block.png",
+    "recipe": []
+  },
+  {
+    "id": "burner_generator",
+    "name": "Burner Generator",
+    "category": "building",
+    "icon": "/res/icons/burner_generator.png",
+    "recipe": []
+  },
+  {
+    "id": "cargo_ship_start_pad",
+    "name": "Cargo Ship Start Pad",
+    "category": "building",
+    "icon": "/res/icons/cargo_ship_start_pad.png",
+    "recipe": []
+  },
+  {
+    "id": "cargo_ship_start_pad_(liquids)",
+    "name": "Cargo Ship Start Pad (Liquids)",
+    "category": "building",
+    "icon": "/res/icons/cargo_ship_start_pad_liquids.png",
+    "recipe": []
+  },
+  {
+    "id": "cargo_ship_target_pad",
+    "name": "Cargo Ship Target Pad",
+    "category": "building",
+    "icon": "/res/icons/cargo_ship_target_pad.png",
+    "recipe": []
+  },
+  {
+    "id": "cargo_ship_target_pad_(liquids)",
+    "name": "Cargo Ship Target Pad (Liquids)",
+    "category": "building",
+    "icon": "/res/icons/cargo_ship_target_pad_liquids.png",
+    "recipe": []
+  },
+  {
+    "id": "casting_machine",
+    "name": "Casting Machine",
+    "category": "building",
+    "icon": "/res/icons/casting_machine.png",
+    "recipe": []
+  },
+  {
+    "id": "ceiling_light_i",
+    "name": "Ceiling Light I",
+    "category": "building",
+    "icon": "/res/icons/ceiling_light_i.png",
+    "recipe": []
+  },
+  {
+    "id": "ceiling_light_ii",
+    "name": "Ceiling Light II",
+    "category": "building",
+    "icon": "/res/icons/ceiling_light_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "cement",
+    "name": "Cement",
+    "category": "craft",
+    "icon": "/res/icons/cement.png",
+    "recipe": []
+  },
+  {
+    "id": "chemical_processor",
+    "name": "Chemical Processor",
+    "category": "building",
+    "icon": "/res/icons/chemical_processor.png",
+    "recipe": []
+  },
+  {
+    "id": "circuit_board",
+    "name": "Circuit Board",
+    "category": "craft",
+    "icon": "/res/icons/circuit_board.png",
+    "recipe": []
+  },
+  {
+    "id": "coked_ignium",
+    "name": "Coked Ignium",
+    "category": "ore",
+    "icon": "/res/icons/coked_ignium.png",
+    "recipe": []
+  },
+  {
+    "id": "combat_robot",
+    "name": "Combat Robot",
+    "category": "robot",
+    "icon": "/res/icons/combat_robot.png",
+    "recipe": []
+  },
+  {
+    "id": "combat_robot_arm",
+    "name": "Combat Robot Arm",
+    "category": "robot",
+    "icon": "/res/icons/combat_robot_arm.png",
+    "recipe": []
+  },
+  {
+    "id": "combat_robot_head",
+    "name": "Combat Robot Head",
+    "category": "robot",
+    "icon": "/res/icons/combat_robot_head.png",
+    "recipe": []
+  },
+  {
+    "id": "combat_robot_leg",
+    "name": "Combat Robot Leg",
+    "category": "robot",
+    "icon": "/res/icons/combat_robot_leg.png",
+    "recipe": []
+  },
+  {
+    "id": "combat_robot_torso",
+    "name": "Combat Robot Torso",
+    "category": "robot",
+    "icon": "/res/icons/combat_robot_torso.png",
+    "recipe": []
+  },
+  {
+    "id": "concrete",
+    "name": "Concrete",
+    "category": "craft",
+    "icon": "/res/icons/concrete.png",
+    "recipe": []
+  },
+  {
+    "id": "construction_material",
+    "name": "Construction Material",
+    "category": "craft",
+    "icon": "/res/icons/construction_material.png",
+    "recipe": []
+  },
+  {
+    "id": "construction_ship_port",
+    "name": "Construction Ship Port",
+    "category": "building",
+    "icon": "/res/icons/construction_ship_port.png",
+    "recipe": []
+  },
+  {
+    "id": "construction_warehouse",
+    "name": "Construction Warehouse",
+    "category": "building",
+    "icon": "/res/icons/construction_warehouse.png",
+    "recipe": []
+  },
+  {
+    "id": "container",
+    "name": "Container",
+    "category": "building",
+    "icon": "/res/icons/container.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_balancer_i",
+    "name": "Conveyor Balancer I",
+    "category": "building",
+    "icon": "/res/icons/conveyor_balancer_i.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_balancer_ii",
+    "name": "Conveyor Balancer II",
+    "category": "building",
+    "icon": "/res/icons/conveyor_balancer_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_balancer_iii",
+    "name": "Conveyor Balancer III",
+    "category": "building",
+    "icon": "/res/icons/conveyor_balancer_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_i",
+    "name": "Conveyor I",
+    "category": "building",
+    "icon": "/res/icons/conveyor_i.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_ii",
+    "name": "Conveyor II",
+    "category": "building",
+    "icon": "/res/icons/conveyor_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_iii",
+    "name": "Conveyor III",
+    "category": "building",
+    "icon": "/res/icons/conveyor_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_iv",
+    "name": "Conveyor IV",
+    "category": "building",
+    "icon": "/res/icons/conveyor_iv.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_slope_i",
+    "name": "Conveyor Slope I",
+    "category": "building",
+    "icon": "/res/icons/conveyor_slope_i.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_slope_ii",
+    "name": "Conveyor Slope II",
+    "category": "building",
+    "icon": "/res/icons/conveyor_slope_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "conveyor_slope_iii",
+    "name": "Conveyor Slope III",
+    "category": "building",
+    "icon": "/res/icons/conveyor_slope_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "cpu",
+    "name": "CPU",
+    "category": "craft",
+    "icon": "/res/icons/cpu.png",
+    "recipe": []
+  },
+  {
+    "id": "crate",
+    "name": "Crate",
+    "category": "building",
+    "icon": "/res/icons/crate.png",
+    "recipe": []
+  },
+  {
+    "id": "crude_olumite",
+    "name": "Crude Olumite",
+    "category": "ore",
+    "icon": "/res/icons/crude_olumite.png",
+    "recipe": []
+  },
+  {
+    "id": "crusher_i",
+    "name": "Crusher I",
+    "category": "building",
+    "icon": "/res/icons/crusher_i.png",
+    "recipe": []
+  },
+  {
+    "id": "crusher_ii",
+    "name": "Crusher II",
+    "category": "building",
+    "icon": "/res/icons/crusher_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "data_cable",
+    "name": "Data Cable",
+    "category": "building",
+    "icon": "/res/icons/data_cable.png",
+    "recipe": []
+  },
+  {
+    "id": "data_evaluator",
+    "name": "Data Evaluator",
+    "category": "building",
+    "icon": "/res/icons/data_evaluator.png",
+    "recipe": []
+  },
+  {
+    "id": "data_memory_cell",
+    "name": "Data Memory Cell",
+    "category": "building",
+    "icon": "/res/icons/data_memory_cell.png",
+    "recipe": []
+  },
+  {
+    "id": "data_processor",
+    "name": "Data Processor",
+    "category": "building",
+    "icon": "/res/icons/data_processor.png",
+    "recipe": []
+  },
+  {
+    "id": "data_source",
+    "name": "Data Source",
+    "category": "building",
+    "icon": "/res/icons/data_source.png",
+    "recipe": []
+  },
+  {
+    "id": "data_source_(button)",
+    "name": "Data Source (Button)",
+    "category": "building",
+    "icon": "/res/icons/data_source_button.png",
+    "recipe": []
+  },
+  {
+    "id": "data_source_(lever)",
+    "name": "Data Source (Lever)",
+    "category": "building",
+    "icon": "/res/icons/data_source_lever.png",
+    "recipe": []
+  },
+  {
+    "id": "distillation_column",
+    "name": "Distillation Column",
+    "category": "building",
+    "icon": "/res/icons/distillation_column.png",
+    "recipe": []
+  },
+  {
+    "id": "drone_miner_i",
+    "name": "Drone Miner I",
+    "category": "building",
+    "icon": "/res/icons/drone_miner_i.png",
+    "recipe": []
+  },
+  {
+    "id": "drone_miner_ii",
+    "name": "Drone Miner II",
+    "category": "building",
+    "icon": "/res/icons/drone_miner_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "electric_arc_furnace",
+    "name": "Electric Arc Furnace",
+    "category": "building",
+    "icon": "res/icons/electric_arc_furnace.png",
+    "recipe": []
+  },
+  {
+    "id": "electronic_components",
+    "name": "Electronic Components",
+    "category": "craft",
+    "icon": "res/icons/electronic_components.png",
+    "recipe": []
+  },
+  {
+    "id": "elevator",
+    "name": "Elevator",
+    "category": "building",
+    "icon": "res/icons/elevator.png",
+    "recipe": []
+  },
+  {
+    "id": "energy_cell",
+    "name": "Energy Cell",
+    "category": "craft",
+    "icon": "res/icons/energy_cell.png",
+    "recipe": []
+  },
+  {
+    "id": "escalator_i",
+    "name": "Escalator I",
+    "category": "building",
+    "icon": "res/icons/escalator_i.png",
+    "recipe": []
+  },
+  {
+    "id": "escalator_ii",
+    "name": "Escalator II",
+    "category": "building",
+    "icon": "res/icons/escalator_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "escalator_iii",
+    "name": "Escalator III",
+    "category": "building",
+    "icon": "res/icons/escalator_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "explosive_charge",
+    "name": "Explosive Charge",
+    "category": "craft",
+    "icon": "res/icons/explosive_charge.png",
+    "recipe": []
+  },
+  {
+    "id": "explosives",
+    "name": "Explosives",
+    "category": "craft",
+    "icon": "res/icons/explosives.png",
+    "recipe": []
+  },
+  {
+    "id": "explosives_detonator",
+    "name": "Explosives Detonator",
+    "category": "craft",
+    "icon": "res/icons/explosives_detonator.png",
+    "recipe": []
+  },
+  {
+    "id": "farmer_robot",
+    "name": "Farmer Robot",
+    "category": "robot",
+    "icon": "res/icons/farmer_robot.png",
+    "recipe": []
+  },
+  {
+    "id": "farmer_robot_arm",
+    "name": "Farmer Robot Arm",
+    "category": "robot",
+    "icon": "res/icons/farmer_robot_arm.png",
+    "recipe": []
+  },
+  {
+    "id": "farmer_robot_head",
+    "name": "Farmer Robot Head",
+    "category": "robot",
+    "icon": "res/icons/farmer_robot_head.png",
+    "recipe": []
+  },
+  {
+    "id": "farmer_robot_leg",
+    "name": "Farmer Robot Leg",
+    "category": "robot",
+    "icon": "res/icons/farmer_robot_leg.png",
+    "recipe": []
+  },
+  {
+    "id": "farmer_robot_torso",
+    "name": "Farmer Robot Torso",
+    "category": "robot",
+    "icon": "res/icons/farmer_robot_torso.png",
+    "recipe": []
+  },
+  {
+    "id": "filter_loader",
+    "name": "Filter Loader",
+    "category": "building",
+    "icon": "res/icons/filter_loader.png",
+    "recipe": []
+  },
+  {
+    "id": "firmarlite_bar",
+    "name": "Firmarlite Bar",
+    "category": "craft",
+    "icon": "res/icons/firmarlite_bar.png",
+    "recipe": []
+  },
+  {
+    "id": "firmarlite_sheet",
+    "name": "Firmarlite Sheet",
+    "category": "craft",
+    "icon": "res/icons/firmarlite_sheet.png",
+    "recipe": []
+  },
+  {
+    "id": "flare_stack",
+    "name": "Flare Stack",
+    "category": "building",
+    "icon": "res/icons/flare_stack.png",
+    "recipe": []
+  },
+  {
+    "id": "fluid_assembler_i",
+    "name": "Fluid Assembler I",
+    "category": "building",
+    "icon": "res/icons/fluid_assembler_i.png",
+    "recipe": []
+  },
+  {
+    "id": "fracking_liquid",
+    "name": "Fracking Liquid",
+    "category": "ore",
+    "icon": "res/icons/fracking_liquid.png",
+    "recipe": []
+  },
+  {
+    "id": "fracking_tower_base",
+    "name": "Fracking Tower Base",
+    "category": "building",
+    "icon": "res/icons/fracking_tower_base.png",
+    "recipe": []
+  },
+  {
+    "id": "freight_elevator_i",
+    "name": "Freight Elevator I",
+    "category": "building",
+    "icon": "res/icons/freight_elevator_i.png",
+    "recipe": []
+  },
+  {
+    "id": "freight_elevator_ii",
+    "name": "Freight Elevator II",
+    "category": "building",
+    "icon": "res/icons/freight_elevator_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "fuel_rod_casing",
+    "name": "Fuel Rod Casing",
+    "category": "craft",
+    "icon": "res/icons/fuel_rod_casing.png",
+    "recipe": []
+  },
+  {
+    "id": "glass",
+    "name": "Glass",
+    "category": "craft",
+    "icon": "res/icons/glass.png",
+    "recipe": []
+  },
+  {
+    "id": "gravel",
+    "name": "Gravel",
+    "category": "craft",
+    "icon": "res/icons/gravel.png",
+    "recipe": []
+  },
+  {
+    "id": "greenhouse",
+    "name": "Greenhouse",
+    "category": "building",
+    "icon": "res/icons/greenhouse.png",
+    "recipe": []
+  },
+  {
+    "id": "hot_air_stove_base",
+    "name": "Hot Air Stove Base",
+    "category": "building",
+    "icon": "res/icons/hot_air_stove_base.png",
+    "recipe": []
+  },
+  {
+    "id": "hydraulic_piston",
+    "name": "Hydraulic Piston",
+    "category": "craft",
+    "icon": "res/icons/hydraulic_piston.png",
+    "recipe": []
+  },
+  {
+    "id": "ignium_fuel_rod",
+    "name": "Ignium Fuel Rod",
+    "category": "craft",
+    "icon": "res/icons/ignium_fuel_rod.png",
+    "recipe": []
+  },
+  {
+    "id": "ignium_ore",
+    "name": "Ignium Ore",
+    "category": "ore",
+    "icon": "res/icons/ignium_ore.png",
+    "recipe": []
+  },
+  {
+    "id": "ignium_ore_rubble",
+    "name": "Ignium Ore Rubble",
+    "category": "ore",
+    "icon": "/res/icons/ignium_ore_rubble.png",
+    "recipe": []
+  },
+  {
+    "id": "ignium_powder",
+    "name": "Ignium Powder",
+    "category": "craft",
+    "icon": "res/icons/ignium_powder.png",
+    "recipe": []
+  },
+  {
+    "id": "incinerator",
+    "name": "Incinerator",
+    "category": "building",
+    "icon": "res/icons/incinerator.png",
+    "recipe": []
+  },
+  {
+    "id": "jetpack_fuel",
+    "name": "Jetpack Fuel",
+    "category": "craft",
+    "icon": "res/icons/jetpack_fuel.png",
+    "recipe": []
+  },
+  {
+    "id": "light_pole_i",
+    "name": "Light Pole I",
+    "category": "building",
+    "icon": "res/icons/light_pole_i.png",
+    "recipe": []
+  },
+  {
+    "id": "light_pole_ii",
+    "name": "Light Pole II",
+    "category": "building",
+    "icon": "res/icons/light_pole_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "liquid_firmarlite",
+    "name": "Liquid Firmarlite",
+    "category": "ore",
+    "icon": "res/icons/liquid_firmarlite.png",
+    "recipe": []
+  },
+  {
+    "id": "liquid_fuel",
+    "name": "Liquid Fuel",
+    "category": "ore",
+    "icon": "res/icons/liquid_fuel.png",
+    "recipe": []
+  },
+  {
+    "id": "liquid_intake",
+    "name": "Liquid Intake",
+    "category": "building",
+    "icon": "res/icons/liquid_intake.png",
+    "recipe": []
+  },
+  {
+    "id": "liquid_polymer",
+    "name": "Liquid Polymer",
+    "category": "ore",
+    "icon": "res/icons/liquid_polymer.png",
+    "recipe": []
+  },
+  {
+    "id": "liquid_telluxite",
+    "name": "Liquid Telluxite",
+    "category": "ore",
+    "icon": "res/icons/liquid_telluxite.png",
+    "recipe": []
+  },
+  {
+    "id": "loader",
+    "name": "Loader",
+    "category": "building",
+    "icon": "res/icons/loader.png",
+    "recipe": []
+  },
+  {
+    "id": "loader_(2nd_lane)",
+    "name": "Loader (2nd Lane)",
+    "category": "building",
+    "icon": "res/icons/loader_(2nd_lane).png",
+    "recipe": []
+  },
+  {
+    "id": "loader_(3rd_lane)",
+    "name": "Loader (3rd Lane)",
+    "category": "building",
+    "icon": "res/icons/loader_(3rd_lane).png",
+    "recipe": []
+  },
+  {
+    "id": "logistic_container_i",
+    "name": "Logistic Container I",
+    "category": "building",
+    "icon": "res/icons/logistic_container_i.png",
+    "recipe": []
+  },
+  {
+    "id": "logistic_container_ii",
+    "name": "Logistic Container II",
+    "category": "building",
+    "icon": "res/icons/logistic_container_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "logistic_container_iii",
+    "name": "Logistic Container III",
+    "category": "building",
+    "icon": "res/icons/logistic_container_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "long_range_scanner",
+    "name": "Long Range Scanner",
+    "category": "building",
+    "icon": "res/icons/long_range_scanner.png",
+    "recipe": []
+  },
+  {
+    "id": "low_density_olumite",
+    "name": "Low Density Olumite",
+    "category": "ore",
+    "icon": "res/icons/low_density_olumite.png",
+    "recipe": []
+  },
+  {
+    "id": "machinery_parts",
+    "name": "Machinery Parts",
+    "category": "craft",
+    "icon": "/res/icons/mach_parts.png",
+    "recipe": []
+  },
+  {
+    "id": "maintenance_drone",
+    "name": "Maintenance Drone",
+    "category": "robot",
+    "icon": "res/icons/maintenance_drone.png",
+    "recipe": []
+  },
+  {
+    "id": "marble_(black)",
+    "name": "Marble (Black)",
+    "category": "craft",
+    "icon": "res/icons/marble_(black).png",
+    "recipe": []
+  },
+  {
+    "id": "marble_(white)",
+    "name": "Marble (White)",
+    "category": "craft",
+    "icon": "res/icons/marble_(white).png",
+    "recipe": []
+  },
+  {
+    "id": "miner_robot",
+    "name": "Miner Robot",
+    "category": "robot",
+    "icon": "res/icons/miner_robot.png",
+    "recipe": []
+  },
+  {
+    "id": "miner_robot_arm",
+    "name": "Miner Robot Arm",
+    "category": "robot",
+    "icon": "res/icons/miner_robot_arm.png",
+    "recipe": []
+  },
+  {
+    "id": "miner_robot_head",
+    "name": "Miner Robot Head",
+    "category": "robot",
+    "icon": "res/icons/miner_robot_head.png",
+    "recipe": []
+  },
+  {
+    "id": "miner_robot_leg",
+    "name": "Miner Robot Leg",
+    "category": "robot",
+    "icon": "res/icons/miner_robot_leg.png",
+    "recipe": []
+  },
+  {
+    "id": "miner_robot_torso",
+    "name": "Miner Robot Torso",
+    "category": "robot",
+    "icon": "res/icons/miner_robot_torso.png",
+    "recipe": []
+  },
+  {
+    "id": "mineral_rocks",
+    "name": "Mineral Rocks",
+    "category": "ore",
+    "icon": "res/icons/mineral_rocks.png",
+    "recipe": []
+  },
+  {
+    "id": "modular_storage_tank_base",
+    "name": "Modular Storage Tank Base",
+    "category": "building",
+    "icon": "res/icons/modular_storage_tank_base.png",
+    "recipe": []
+  },
+  {
+    "id": "molten_technum",
+    "name": "Molten Technum",
+    "category": "ore",
+    "icon": "res/icons/molten_technum.png",
+    "recipe": []
+  },
+  {
+    "id": "molten_xenoferrite",
+    "name": "Molten Xenoferrite",
+    "category": "ore",
+    "icon": "res/icons/molten_xenoferrite.png",
+    "recipe": []
+  },
+  {
+    "id": "monument_base",
+    "name": "Monument Base",
+    "category": "building",
+    "icon": "res/icons/monument_base.png",
+    "recipe": []
+  },
+  {
+    "id": "olumic_acid",
+    "name": "Olumic Acid",
+    "category": "ore",
+    "icon": "res/icons/olumic_acid.png",
+    "recipe": []
+  },
+  {
+    "id": "olumite_gas",
+    "name": "Olumite Gas",
+    "category": "ore",
+    "icon": "res/icons/olumite_gas.png",
+    "recipe": []
+  },
+  {
+    "id": "ore_vein_miner",
+    "name": "Ore Vein Miner",
+    "category": "building",
+    "icon": "res/icons/ore_vein_miner.png",
+    "recipe": []
+  },
+  {
+    "id": "personal_assistant_robot",
+    "name": "Personal Assistant Robot",
+    "category": "robot",
+    "icon": "res/icons/personal_assistant_robot.png",
+    "recipe": []
+  },
+  {
+    "id": "personal_assistant_robot_arm",
+    "name": "Personal Assistant Robot Arm",
+    "category": "robot",
+    "icon": "res/icons/personal_assistant_robot_arm.png",
+    "recipe": []
+  },
+  {
+    "id": "personal_assistant_robot_head",
+    "name": "Personal Assistant Robot Head",
+    "category": "robot",
+    "icon": "res/icons/personal_assistant_robot_head.png",
+    "recipe": []
+  },
+  {
+    "id": "personal_assistant_robot_leg",
+    "name": "Personal Assistant Robot Leg",
+    "category": "robot",
+    "icon": "res/icons/personal_assistant_robot_leg.png",
+    "recipe": []
+  },
+  {
+    "id": "personal_assistant_robot_torso",
+    "name": "Personal Assistant Robot Torso",
+    "category": "robot",
+    "icon": "res/icons/personal_assistant_robot_torso.png",
+    "recipe": []
+  },
+  {
+    "id": "pipe-to-pipeline_pump",
+    "name": "Pipe-to-Pipeline Pump",
+    "category": "building",
+    "icon": "res/icons/pipe-to-pipeline_pump.png",
+    "recipe": []
+  },
+  {
+    "id": "pipe",
+    "name": "Pipe",
+    "category": "building",
+    "icon": "res/icons/pipe.png",
+    "recipe": []
+  },
+  {
+    "id": "pipeline-to-pipe_pump",
+    "name": "Pipeline-to-Pipe Pump",
+    "category": "building",
+    "icon": "res/icons/pipeline-to-pipe_pump.png",
+    "recipe": []
+  },
+  {
+    "id": "pipeline",
+    "name": "Pipeline",
+    "category": "building",
+    "icon": "res/icons/pipeline.png",
+    "recipe": []
+  },
+  {
+    "id": "polymer_board",
+    "name": "Polymer Board",
+    "category": "craft",
+    "icon": "res/icons/polymer_board.png",
+    "recipe": []
+  },
+  {
+    "id": "portable_fuel",
+    "name": "Portable Fuel",
+    "category": "craft",
+    "icon": "res/icons/portable_fuel.png",
+    "recipe": []
+  },
+  {
+    "id": "power_line",
+    "name": "Power Line",
+    "category": "building",
+    "icon": "res/icons/power_line.png",
+    "recipe": []
+  },
+  {
+    "id": "power_pole_(large)",
+    "name": "Power Pole (Large)",
+    "category": "building",
+    "icon": "res/icons/power_pole_(large).png",
+    "recipe": []
+  },
+  {
+    "id": "power_pole_(small)",
+    "name": "Power Pole (Small)",
+    "category": "building",
+    "icon": "res/icons/power_pole_(small).png",
+    "recipe": []
+  },
+  {
+    "id": "power_pole_(wall-mounted)",
+    "name": "Power Pole (Wall-Mounted)",
+    "category": "building",
+    "icon": "res/icons/power_pole_(wall-mounted).png",
+    "recipe": []
+  },
+  {
+    "id": "pump_(pipelines)",
+    "name": "Pump (Pipelines)",
+    "category": "building",
+    "icon": "res/icons/pump_(pipelines).png",
+    "recipe": []
+  },
+  {
+    "id": "pump_(pipes)",
+    "name": "Pump (Pipes)",
+    "category": "building",
+    "icon": "res/icons/pump_(pipes).png",
+    "recipe": []
+  },
+  {
+    "id": "pumpjack_i",
+    "name": "Pumpjack I",
+    "category": "building",
+    "icon": "res/icons/pumpjack_i.png",
+    "recipe": []
+  },
+  {
+    "id": "radio_tower_base",
+    "name": "Radio Tower Base",
+    "category": "building",
+    "icon": "res/icons/radio_tower_base.png",
+    "recipe": []
+  },
+  {
+    "id": "railings",
+    "name": "Railings",
+    "category": "building",
+    "icon": "res/icons/railings.png",
+    "recipe": []
+  },
+  {
+    "id": "research_server",
+    "name": "Research Server",
+    "category": "building",
+    "icon": "res/icons/research_server.png",
+    "recipe": []
+  },
+  {
+    "id": "science_pack_i",
+    "name": "Science Pack I",
+    "category": "science",
+    "icon": "res/icons/science_pack_i.png",
+    "recipe": []
+  },
+  {
+    "id": "science_pack_ii",
+    "name": "Science Pack II",
+    "category": "science",
+    "icon": "res/icons/science_pack_ii.png",
+    "recipe": []
+  },
+  {
+    "id": "science_pack_iii",
+    "name": "Science Pack III",
+    "category": "science",
+    "icon": "res/icons/science_pack_iii.png",
+    "recipe": []
+  },
+  {
+    "id": "science_pack_iv",
+    "name": "Science Pack IV",
+    "category": "science",
+    "icon": "res/icons/science_pack_iv.png",
+    "recipe": []
+  },
+  {
+    "id": "science_pack_v",
+    "name": "Science Pack V",
+    "category": "science",
+    "icon": "res/icons/science_pack_v.png",
+    "recipe": []
+  },
+  {
+    "id": "science_robot",
+    "name": "Science Robot",
+    "category": "robot",
+    "icon": "res/icons/science_robot.png",
+    "recipe": []
+  },
+  {
+    "id": "science_robot_arm",
+    "name": "Science Robot Arm",
+    "category": "robot",
+    "icon": "res/icons/science_robot_arm.png",
+    "recipe": []
+  },
+  {
+    "id": "science_robot_head",
+    "name": "Science Robot Head",
+    "category": "robot",
+    "icon": "res/icons/science_robot_head.png",
+    "recipe": []
+  },
+  {
+    "id": "science_robot_leg",
+    "name": "Science Robot Leg",
+    "category": "robot",
+    "icon": "res/icons/science_robot_leg.png",
+    "recipe": []
+  },
+  {
+    "id": "science_robot_torso",
+    "name": "Science Robot Torso",
+    "category": "robot",
+    "icon": "res/icons/science_robot_torso.png",
+    "recipe": []
+  },
+  {
+    "id": "shipping_pad_(medium)",
+    "name": "Shipping Pad (Medium)",
+    "category": "building",
+    "icon": "res/icons/shipping_pad_(medium).png",
+    "recipe": []
+  },
+  {
+    "id": "shipping_pad_(small)",
+    "name": "Shipping Pad (Small)",
+    "category": "building",
+    "icon": "res/icons/shipping_pad_(small).png",
+    "recipe": []
+  },
+  {
+    "id": "sign",
+    "name": "Sign",
+    "category": "building",
+    "icon": "res/icons/sign.png",
+    "recipe": []
+  },
+  {
+    "id": "smelter_(small)",
+    "name": "Smelter (Small)",
+    "category": "building",
+    "icon": "res/icons/smelter_(small).png",
+    "recipe": []
+  },
+  {
+    "id": "solar_panel_(large)",
+    "name": "Solar Panel (Large)",
+    "category": "building",
+    "icon": "res/icons/solar_panel_(large).png",
+    "recipe": []
+  },
+  {
+    "id": "solar_panel_(small)",
+    "name": "Solar Panel (Small)",
+    "category": "building",
+    "icon": "res/icons/solar_panel_(small).png",
+    "recipe": []
+  },
+  {
+    "id": "stairs",
+    "name": "Stairs",
+    "category": "building",
+    "icon": "res/icons/stairs.png",
+    "recipe": []
+  },
+  {
+    "id": "steam",
+    "name": "Steam",
+    "category": "ore",
+    "icon": "res/icons/steam.png",
+    "recipe": []
+  },
+  {
+    "id": "steam_turbine",
+    "name": "Steam Turbine",
+    "category": "building",
+    "icon": "res/icons/steam_turbine.png",
+    "recipe": []
+  },
+  {
+    "id": "steel_beams",
+    "name": "Steel Beams",
+    "category": "craft",
+    "icon": "/res/icons/steel_beams.png",
+    "recipe": []
+  },
+  {
+    "id": "tank_i",
+    "name": "Tank I",
+    "category": "building",
+    "icon": "res/icons/tank_i.png",
+    "recipe": []
+  },
+  {
+    "id": "technum_ore",
+    "name": "Technum Ore",
+    "category": "ore",
+    "icon": "res/icons/technum_ore.png",
+    "recipe": []
+  },
+  {
+    "id": "technum_ore_rubble",
+    "name": "Technum Ore Rubble",
+    "category": "ore",
+    "icon": "res/icons/technum_ore_rubble.png",
+    "recipe": []
+  },
+  {
+    "id": "technum_rods",
+    "name": "Technum Rods",
+    "category": "craft",
+    "icon": "res/icons/technum_rods.png",
+    "recipe": []
+  },
+  {
+    "id": "telluxite_ingot",
+    "name": "Telluxite Ingot",
+    "category": "craft",
+    "icon": "res/icons/telluxite_ingot.png",
+    "recipe": []
+  },
+  {
+    "id": "telluxite_ore",
+    "name": "Telluxite Ore",
+    "category": "ore",
+    "icon": "res/icons/telluxite_ore.png",
+    "recipe": []
+  },
+  {
+    "id": "telluxite_ore_rubble",
+    "name": "Telluxite Ore Rubble",
+    "category": "ore",
+    "icon": "res/icons/telluxite_ore_rubble.png",
+    "recipe": []
+  },
+  {
+    "id": "telluxite_wafer",
+    "name": "Telluxite Wafer",
+    "category": "craft",
+    "icon": "res/icons/telluxite_wafer.png",
+    "recipe": []
+  },
+  {
+    "id": "transformer_(large)",
+    "name": "Transformer (Large)",
+    "category": "building",
+    "icon": "res/icons/transformer_(large).png",
+    "recipe": []
+  },
+  {
+    "id": "transformer_(small)",
+    "name": "Transformer (Small)",
+    "category": "building",
+    "icon": "res/icons/transformer_(small).png",
+    "recipe": []
+  },
+  {
+    "id": "transport_ship_port",
+    "name": "Transport Ship Port",
+    "category": "building",
+    "icon": "res/icons/transport_ship_port.png",
+    "recipe": []
+  },
+  {
+    "id": "walkway",
+    "name": "Walkway",
+    "category": "building",
+    "icon": "res/icons/walkway.png",
+    "recipe": []
+  },
+  {
+    "id": "wall_light_i",
+    "name": "Wall Light I",
+    "category": "building",
+    "icon": "res/icons/wall_light_i.png",
+    "recipe": []
+  },
+  {
+    "id": "waste_gas",
+    "name": "Waste Gas",
+    "category": "ore",
+    "icon": "res/icons/waste_gas.png",
+    "recipe": []
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "category": "ore",
+    "icon": "res/icons/water.png",
+    "recipe": []
+  },
+  {
+    "id": "weapon_components",
+    "name": "Weapon Components",
+    "category": "craft",
+    "icon": "res/icons/weapon_components.png",
+    "recipe": []
+  },
+  {
+    "id": "wire_coil",
+    "name": "Wire Coil",
+    "category": "craft",
+    "icon": "res/icons/wire_coil.png",
+    "recipe": []
+  },
+  {
+    "id": "xenoferrite_ignium_ore_blend",
+    "name": "Xenoferrite Ignium Ore Blend",
+    "category": "ore",
+    "icon": "/res/icons/xeno_ignium_blend.png",
+    "recipe": []
+  },
+  {
+    "id": "xenoferrite_ore_rubble",
+    "name": "Xenoferrite Ore Rubble",
+    "category": "ore",
+    "icon": "/res/icons/xeno_ore_rubble.png",
+    "recipe": []
+  },
+  {
+    "id": "xenoferrite_ore",
+    "name": "Xenoferrite Ore",
+    "category": "ore",
+    "icon": "/res/icons/xeno_ore.png",
+    "recipe": []
+  },
+  {
+    "id": "xenoferrite_plate",
+    "name": "Xenoferrite Plate",
+    "category": "craft",
+    "icon": "/res/icons/xeno_plate.png",
+    "recipe": []
+  }
+]
