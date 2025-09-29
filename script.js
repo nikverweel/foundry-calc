@@ -6,12 +6,18 @@ const smelterBtn = document.getElementById("smelterBtn");
 let items = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("items.json")
-    .then(res => res.json())
-    .then(data => {
-      items = data;
-      renderItems();
-    });
+    Promise.all([
+        fetch("./items.json").then(res => res.json()),
+        // fetch("./recipes.json").then(res => res.json())
+    ])
+    .then(([itemsData, recipesData]) => {
+        items = itemsData;
+        recipes = recipesData;
+
+        renderItems();
+        updateCounters();
+    })
+    .catch(err => console.error("Error loading JSON:", err));
 });
 
 // Render items
@@ -61,3 +67,9 @@ renderItems();
 smelterBtn.addEventListener("click", () => {
   smelterMenu.classList.toggle("open");
 });
+
+// Update counters
+function updateCounters() {
+  document.getElementById("item-count").textContent = items.length;
+  // document.getElementById("recipe-count").textContent = recipes.length;
+}
