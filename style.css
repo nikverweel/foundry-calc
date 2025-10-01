@@ -138,6 +138,11 @@ body, html {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
+h4 {
+    padding: 3px;
+    margin: 0;
+}
+
 .tools-buttons h4 {
     font-size: 13px;
     padding: 3px;
@@ -157,6 +162,22 @@ body, html {
     transition: background 0.2s
 }
 
+.tool-btn.toggle-off {
+    background: #aa4345d8 !important; 
+}
+
+.tool-btn.toggle-on {
+    background: #c5ebc5 !important;
+}
+
+.tool-btn.toggle-off:hover {
+    background: #aa4345bb !important;
+}
+
+.tool-btn.toggle-on:hover {
+    background: #c5ebc5d8 !important;
+}
+
 .tool-btn:hover {
     background: #cac3c3;
 }
@@ -167,22 +188,72 @@ body, html {
     object-fit: contain;
 }
 
-.smelter-menu {
-    position: fixed;
+.menu.hidden {
+    display: none;
+}
+
+.menu {
+    position: absolute;
     bottom: 15px;
-    right: -240px;
-    width: 200px;
+    right: 90px;
     z-index: 999;
     background: #d8d1d1;
     border: 1px solid #999797;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    transition: right 0.3s ease;
     padding: 10px;
+    text-align: center;
 }
 
-.smelter-menu.open {
-    right: 93px
+.menu-options {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.crusher-toggle {
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.option-btns {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60px;
+}
+
+.option-btns p {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.option {
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 1px solid #242424;
+    background: #b9b2b2;
+}
+
+.option.selected {
+    background: #c5ebc5
+}
+
+.option img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
 .credits-box {

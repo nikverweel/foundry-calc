@@ -27,8 +27,7 @@ for (filename in filenames) {
         "id": "%s",
         "name": "%s",
         "category": "*",
-        "icon": "%s",
-        "recipe": []
+        "icon": "%s"
         },'
   
     formatted_json <- sprintf(

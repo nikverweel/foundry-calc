@@ -16,7 +16,7 @@
         <aside class="sidebar">
             <div class="logo">
                 <img src="/res/logo.png">
-                <p>Version 0.1 - Last updated 29/09/25</p>
+                <p>Version 0.2 - Last updated 01/10/25</p>
                 <p>Tracking <strong><span id="item-count">0</span></strong> items and <strong><span id="recipe-count">0</span></strong> recipes.</p>
             </div>
 
@@ -50,25 +50,83 @@
     <!-- Tools -->
     <div class="tools-buttons">
         <h4>Options</h4>
-        <div id="smelterBtn" class="tool-btn">
+        <div class="tool-btn" data-menu="smelterMenu">
             <img src="/res/icons/smelter_(small).png" alt="Smelter Tier">
         </div>
-        <div id="assemblerTierButton" class="tool-btn">
+        <div class="tool-btn" data-menu="assemblerMenu">
             <img src="/res/icons/assembler_i.png" alt="Assembler Tier">
         </div>
-        <div id="crusherTierButton" class="tool-btn">
-            <img src="/res/icons/crusher_i.png">
+        <div class="tool-btn toggle-off" data-menu="crusherMenu">
+            <img src="/res/icons/crusher_i.png" alt="Crusher Tier">
         </div>
-        <div id="conveyorTierButton" class="tool-btn">
+        <div class="tool-btn" alt="Conveyor Tier" data-menu="conveyorMenu">
             <img src="/res/icons/conveyor_i.png">
         </div>
     </div>
 
-    <div id="smelterMenu" class="smelter-menu">
-        <h4>Select smelter level</h4>
-        <ul id="smelterList">
-            <!-- Items injected by JS -->
-        </ul>
+    <div id="smelterMenu" class="menu hidden">
+        <h4>Select smelter tier</h4>
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/smelter_(small).png">
+                    <img src="/res/icons/smelter_(small).png" alt="Smelter">            
+                </div>
+                <p>Smelter</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/adv_smelter.png">
+                    <img src="/res/icons/adv_smelter.png" alt="Advanced Smelter">
+                </div>         
+                <p>Advanced Smelter</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="assemblerMenu" class="menu hidden">
+        <h4>Select assembler tier</h4>
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/assembler_i.png">
+                    <img src="/res/icons/assembler_i.png" alt="Assembler I">            
+                </div>
+                <p>Assembler I</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/assembler_ii.png">
+                    <img src="/res/icons/assembler_ii.png" alt="Assembler II">            
+                </div>
+                <p>Assembler II</p>
+            </div>
+             <div class="option-btns">
+                <div class="option" data-icon="/res/icons/assembler_iii.png">
+                    <img src="/res/icons/assembler_iii.png" alt="Assembler III">            
+                </div>
+                <p>Assembler III</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="crusherMenu" class="menu hidden">
+        <h4>Select crusher tier</h4>
+        <label class="crusher-toggle">
+            <input type="checkbox" id="crusherToggle">
+            Use crusher
+        </label>
+
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/crusher_i.png">
+                    <img src="/res/icons/crusher_i.png" alt="Crusher I">            
+                </div>
+                <p>Crusher I</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/crusher_ii.png">
+                    <img src="/res/icons/crusher_ii.png" alt="Crusher II">            
+                </div>
+                <p>Crusher II</p>
+            </div>
+        </div>
     </div>
 
 

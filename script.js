@@ -1,10 +1,11 @@
 const grid = document.getElementById("itemGrid");
 const search = document.getElementById("search");
 const categoryButtons = document.querySelectorAll(".categories li");
-const smelterBtn = document.getElementById("smelterBtn");
 
 let items = [];
+let recipes = [];
 
+// Load page
 document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
         fetch("./items.json").then(res => res.json()),
@@ -18,6 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCounters();
     })
     .catch(err => console.error("Error loading JSON:", err));
+
+    // Crusher toggle logic (in here because otherwise it doesn't work for some reason)
+    const crusherToggle = document.getElementById("crusherToggle");
+    const crusherButton = document.querySelector('.tool-btn[data-menu="crusherMenu"]');
+
+    if (crusherToggle && crusherButton) {
+        crusherToggle.addEventListener("change", () => {
+            crusherButton.classList.toggle("toggle-on", crusherToggle.checked);
+            crusherButton.classList.toggle("toggle-off", !crusherToggle.checked);
+        });
+
+        crusherButton.classList.toggle("toggle-on", crusherToggle.checked);
+        crusherButton.classList.toggle("toggle-off", !crusherToggle.checked);
+    }
 });
 
 // Render items
@@ -63,13 +78,49 @@ search.addEventListener("input", () => {
 // Initial load
 renderItems();
 
-// Tools Menu Logic
-smelterBtn.addEventListener("click", () => {
-  smelterMenu.classList.toggle("open");
-});
-
 // Update counters
 function updateCounters() {
   document.getElementById("item-count").textContent = items.length;
-  // document.getElementById("recipe-count").textContent = recipes.length;
+  document.getElementById("recipe-count").textContent = recipes.length;
 }
+
+// Handle menu toggling
+document.querySelectorAll(".tool-btn").forEach(button => {
+    const menuId = button.dataset.menu;
+    if (!menuId) return; // skip buttons without menus
+
+    const menu = document.getElementById(menuId);
+    const icon = button.querySelector("img");
+
+    // Toggle menu when clicking the button
+    button.addEventListener("click", (e) => {
+        e.stopPropagation();
+        
+        // Close all other menus first
+        document.querySelectorAll(".menu").forEach(m => {
+            if (m !== menu) m.classList.add("hidden");
+        });
+
+        menu.classList.toggle("hidden");
+    });
+
+    // Handle option clicks inside this menu
+    menu.querySelectorAll(".option").forEach(option => {
+        option.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            // Remove selection from all in this menu
+            menu.querySelectorAll(".option").forEach(opt => opt.classList.remove("selected"));
+
+            // Highlight this one
+            option.classList.add("selected");
+
+            // Update sidebar icon
+            icon.src = option.dataset.icon;
+
+            // Close menu
+            menu.classList.add("hidden");
+        });
+    });
+
+});
