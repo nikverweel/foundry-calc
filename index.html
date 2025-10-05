@@ -16,7 +16,7 @@
         <aside class="sidebar">
             <div class="logo">
                 <img src="/res/logo.png">
-                <p>Version 0.2 - Last updated 01/10/25</p>
+                <p>Version 0.2 - Last updated 03/10/25</p>
                 <p>Tracking <strong><span id="item-count">0</span></strong> items and <strong><span id="recipe-count">0</span></strong> recipes.</p>
             </div>
 
@@ -50,6 +50,9 @@
     <!-- Tools -->
     <div class="tools-buttons">
         <h4>Options</h4>
+        <div class="tool-btn" data-menu="minerMenu">
+            <img src="/res/icons/drone_miner_i.png" alt="Miner Tier">
+        </div>
         <div class="tool-btn" data-menu="smelterMenu">
             <img src="/res/icons/smelter_(small).png" alt="Smelter Tier">
         </div>
@@ -61,6 +64,30 @@
         </div>
         <div class="tool-btn" alt="Conveyor Tier" data-menu="conveyorMenu">
             <img src="/res/icons/conveyor_i.png">
+        </div>
+    </div>
+
+    <div id="minerMenu" class="menu hidden">
+        <h4>Select miner tier</h4>
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/drone_miner_i.png">
+                    <img src="/res/icons/drone_miner_i.png" alt="Drone Miner I">            
+                </div>
+                <p>Drone Miner I</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/drone_miner_ii.png">
+                    <img src="/res/icons/drone_miner_ii.png" alt="Drone Miner II">
+                </div>         
+                <p>Drone Miner II</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/ore_vein_miner.png">
+                    <img src="/res/icons/ore_vein_miner.png" alt="Ore Vein Miner">
+                </div>         
+                <p>Ore Vein Miner</p>
+            </div>
         </div>
     </div>
 
@@ -129,6 +156,35 @@
         </div>
     </div>
 
+    <div id="conveyorMenu" class="menu hidden">
+        <h4>Select conveyor tier</h4>
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/conveyor_i.png">
+                    <img src="/res/icons/conveyor_i.png" alt="Conveyor I">            
+                </div>
+                <p>Conveyor I</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/conveyor_ii.png">
+                    <img src="/res/icons/conveyor_ii.png" alt="Conveyor II">            
+                </div>
+                <p>Conveyor II</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/conveyor_iii.png">
+                    <img src="/res/icons/conveyor_iii.png" alt="Conveyor III">            
+                </div>
+                <p>Conveyor III</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/conveyor_iv.png">
+                    <img src="/res/icons/conveyor_iv.png" alt="Conveyor IV">            
+                </div>
+                <p>Conveyor IV</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Credits -->
     <div class="credits-box">
