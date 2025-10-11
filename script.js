@@ -4,6 +4,7 @@ const categoryButtons = document.querySelectorAll(".categories li");
 
 let items = [];
 let recipes = [];
+let selectedItems = [];
 
 // Load page
 document.addEventListener("DOMContentLoaded", () => {
@@ -53,11 +54,65 @@ function renderItems(filter = "all", query = "") {
         });
 }
 
+// Check constraints and select item(s)
 function selectItem(item) {
-    document.querySelector(".content").innerHTML = `
-        <h1>${item.name}</h1>
-        <p>Calculator for ${item.name} will go here...</p>
-    `
+    if (selectedItems.length >= 7) {
+        alert('Maximum 7 items allowed')
+        return
+    };
+    if (selectedItems.some(i => i.id === item.id)) return;
+    
+    selectedItems.push(item);
+    renderHeader();
+}
+
+// Removes items from the array
+function removeItem(itemId) {
+    selectedItems = selectedItems.filter(i => i.id !== itemId);
+    renderHeader();
+}
+
+// Renders the header based on the items in the array
+function renderHeader() {
+    const content = document.querySelector(".content");
+    const creditsHTML = `
+    <div class="credits-header">
+        <p>Icons by FOUNDRY - not my creations | Recipe information from <a href="https://wiki.foundry-game.com/index.php?title=Foundry_Wiki" target="_blank">FOUNDRY Wiki</a> | Calculator by UnknownUluguru - <a href="https://github.com/nikverweel/foundry-calc/issues" target="_blank">Report issues</a></p>
+    </div>`
+    
+    if (selectedItems.length === 0) {
+        content.innerHTML = `
+        ${creditsHTML}
+        <div class="calc-header">
+            <h1>Select an item on the left to begin.</h1>
+        </div>
+        `;
+        return;
+    }
+    
+    const itemsHTML = selectedItems.map(item => `
+        <div class="calc-input">    
+            <label for="targetAmount-${item.id}">${item.name}</label>    
+            <img src="${item.icon}" alt="${item.name}" class="header-icon" data-item-id="${item.id}">
+            <input type="number" id="targetAmount-${item.id}" min="0" value="0" step="1">
+        </div>
+    `).join('');
+    
+    content.innerHTML = `
+    ${creditsHTML}
+    <div class="calc-header">
+        ${itemsHTML}
+    </div>
+    <div id="calcResults"></div>
+    `;
+    
+    document.querySelectorAll(".header-icon").forEach(icon => {
+        icon.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const itemId = e.target.getAttribute("data-item-id");
+            removeItem(itemId);
+        });
+    });
 }
 
 // Category switching
