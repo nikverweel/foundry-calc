@@ -1,10 +1,10 @@
 # Configuration
-renamed_images_dir <- "/path/"
-output_file <- "json_objects.txt"
-icon_base_path <- "res/icons/"
+input_items <- "../res/icons/"
+output_file <- "../items.json"
+icon_base_path <- "./res/icons/"
 
 # Get all the .png files
-filenames <- list.files(renamed_images_dir, pattern = "\\.png$", full.names = FALSE)
+filenames <- list.files(input_items, pattern = "\\.png$", full.names = FALSE)
 
 # Check if any files were found and stop if the directory is empty
 if (length(filenames) == 0) {

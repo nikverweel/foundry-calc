@@ -138,6 +138,19 @@ body, html {
     align-items: center;
 }
 
+.input-with-unit {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.unit-label {
+    font-size: 9px;
+    color: #666363;
+    font-style: italic;
+    font-weight: 400;
+}
+
 .calc-header img {
   width: 64px;
   height: 64px;
@@ -157,7 +170,7 @@ body, html {
 }
 
 .calc-input label {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
     max-width: 80px;
     word-wrap: break-word;
@@ -170,7 +183,7 @@ body, html {
   border: 1px solid #242424;
   border-radius: 5px;
   font-size: 12px;
-  width: 64px;
+  width: 40px;
 }
 
 .tools-buttons {
@@ -306,12 +319,20 @@ h4 {
     object-fit: contain;
 }
 
-.credits-header {
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
     background: #c7bfbf;
-    padding: 7px 10px;
-    border-bottom: 1px solid #242424;
-    font-size: 10px;
-    color: #424141;
+    border-bottom: 2px solid #242424;
+}
+
+.credits-header {
+    flex: 1;
+    border-bottom: none !important;
+    padding: 0 !important;
+    font-size: 11px;
 }
 
 .credits-header p {
@@ -328,6 +349,49 @@ h4 {
     text-decoration: underline;
 }
 
+.save-controls {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.save-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 7px;
+    background: #b9b2b2;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #212020;
+    width: 35px;
+    height: 45px;
+}
+
+.save-btn img {
+    width: 15px;
+    height: 15px;
+}
+
+.save-btn:hover {
+    background: #d3caca;
+    transform: translateY(-1px);
+}
+
+.save-btn:active {
+    transform: translateY(0);
+}
+
+.save-btn span {
+    font-size: 9px;
+}
+
 .smelter-menu h4 {
     padding: 0;
     margin: 0;
@@ -336,4 +400,192 @@ h4 {
 h1 {
     padding: 0;
     margin: 0;
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.dialog-overlay.hidden {
+    display: none;
+}
+
+.dialog-box {
+    background: #c7bfbf;
+    border: 2px solid #242424;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.dialog-box h3 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.dialog-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.dialog-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.dialog-btn {
+    padding: 8px 16px;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.cancel-btn {
+    background: #b9b2b2;
+    color: #212020;
+}
+
+.cancel-btn:hover {
+    background: #a9a2a2;
+}
+
+.confirm-btn {
+    background: #5a8f5a;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background: #4a7f4a;
+}
+
+.load-dialog {
+    min-width: 500px;
+}
+
+.saves-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.save-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #b9b2b2;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.save-item:hover {
+    background: #a9a2a2;
+}
+
+.save-item-info {
+    flex: 1;
+}
+
+.save-item-name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.save-item-date {
+    font-size: 11px;
+    color: #666363;
+}
+
+.delete-btn {
+    padding: 6px;
+    background: #aa4345;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    background: #8a3335;
+}
+
+.delete-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+}
+
+.empty-saves {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666363;
+    font-style: italic;
+}
+
+.dialog-info {
+    font-size: 13px;
+    color: #666363;
+    margin-bottom: 10px;
+}
+
+.share-url-container {
+    display: flex;
+    gap: 8px;
+}
+
+.share-url-container input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.copy-btn {
+    padding: 10px 20px;
+    margin: 0;
+    background: #5a8f5a;
+    color: white;
+    border: 1px solid #242424;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.copy-btn:hover {
+    background: #4a7f4a;
+}
+
+.copy-btn.copied {
+    background: #4a7f4a;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Online Foundry Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/res/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./res/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <aside class="sidebar">
             <div class="logo">
                 <img src="/res/logo.png">
-                <p>Game Version x.x - Last updated 11/10/25</p>
+                <p>Game Version x.x - Last updated 14/10/25</p>
                 <p>Tracking <strong><span id="item-count">0</span></strong> items and <strong><span id="recipe-count">0</span></strong> recipes</p>
             </div>
 
@@ -41,16 +41,40 @@
 
         <!-- Main content -->
         <main class="content">
-            <div class="credits-header">
-                <p>Icons by FOUNDRY - not my creations | 
-                Recipe information from <a href="https://wiki.foundry-game.com/index.php?title=Foundry_Wiki" target="_blank">FOUNDRY Wiki</a> | 
-                Calculator by UnknownUluguru - <a href="https://github.com/nikverweel/foundry-calc/issues" target="_blank">Report issues</a> | 
-                <a href="https://ko-fi.com/unknownuluguru">Support me on Ko-fi here</a>
-                </p>
+            <div class="header-wrapper">
+                <div class="credits-header">
+                    <p>Icons by FOUNDRY - not my creations | 
+                    Recipe information from <a href="https://wiki.foundry-game.com/index.php?title=Foundry_Wiki" target="_blank">FOUNDRY Wiki</a> | 
+                    Calculator by UnknownUluguru - <a href="https://github.com/nikverweel/foundry-calc/issues" target="_blank">Report issues</a> | 
+                    <a href="https://ko-fi.com/unknownuluguru" taget="_blank">Support me on Ko-fi here</a> | Icons by <a href="" target="_blank">Icons8</a>
+                    </p>
+                </div>
+                <div class="save-controls">
+                    <button class="save-btn" id="saveBtn">
+                        <img src="./res/ui/upload.png">
+                        <span>Save</span>
+                    </button>
+                    <button class="save-btn" id="loadBtn">
+                        <img src="./res/ui/download.png">
+                        <span>Load</span>
+                    </button>
+                    <button class="save-btn" id="shareBtn">
+                        <img src="./res/ui/share.png">
+                        <span>Share</span>
+                    </button>
+                </div>
             </div>
+
             <div class="calc-header">
                 <h1>Select an item on the left to begin.</h1>
             </div>
+
+            TO DO: <br>
+            - Include options into the savestate(s) <br>
+            - Link options to speed variables <br>
+            - Add GUI for total power draw <br>
+            - Add loading screen
+
         </main>
         
     </div>
@@ -70,11 +94,15 @@
         <div class="tool-btn toggle-off" data-menu="crusherMenu">
             <img src="/res/icons/crusher_i.png" alt="Crusher Tier">
         </div>
+        <div class="tool-btn" data-menu="lavaSmelterMenu">
+            <img src="/res/icons/lava_smelter_i.png" alt="Lava Smelter Tier">
+        </div>
         <div class="tool-btn" alt="Conveyor Tier" data-menu="conveyorMenu">
             <img src="/res/icons/conveyor_i.png">
         </div>
     </div>
 
+    <!-- Tool menus -->
     <div id="minerMenu" class="menu hidden">
         <h4>Select miner tier</h4>
         <div class="menu-options">
@@ -164,6 +192,24 @@
         </div>
     </div>
 
+    <div id="lavaSmelterMenu" class="menu hidden">
+        <h4>Select lava smelter tier</h4>
+        <div class="menu-options">
+            <div class="option-btns">
+                <div class="option selected" data-icon="/res/icons/lava_smelter_i.png">
+                    <img src="/res/icons/lava_smelter_i.png" alt="Lava Smelter">            
+                </div>
+                <p>Lava Smelter I</p>
+            </div>
+            <div class="option-btns">
+                <div class="option" data-icon="/res/icons/lava_smelter_ii.png">
+                    <img src="/res/icons/lava_smelter_ii.png" alt="Lava Smelter II">
+                </div>         
+                <p>Lava Smelter II</p>
+            </div>
+        </div>
+    </div>
+
     <div id="conveyorMenu" class="menu hidden">
         <h4>Select conveyor tier</h4>
         <div class="menu-options">
@@ -192,7 +238,46 @@
                 <p>Conveyor IV</p>
             </div>
         </div>
-    </div>    
+    </div>
+    
+    <!-- Save Dialog -->
+    <div id="saveDialog" class="dialog-overlay hidden">
+        <div class="dialog-box">
+            <h3>Save calculation</h3>
+            <input type="text" id="saveNameInput" placeholder="Enter save name..." maxlength="50">
+            <div class="dialog-buttons">
+                <button class="dialog-btn cancel-btn" id="saveCancelBtn">Cancel</button>
+                <button class="dialog-btn confirm-btn" id="saveConfirmBtn">Save</button>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Load Dialog -->
+    <div id="loadDialog" class="dialog-overlay hidden">
+        <div class="dialog-box load-dialog">
+            <h3>Load calculation</h3>
+            <div id="savesList" class="saves-list"></div>
+            <div class="dialog-buttons">
+                <button class="dialog-btn cancel-btn" id="loadCancelBtn">Close</button>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Share Dialog -->
+    <div id="shareDialog" class="dialog-overlay hidden">
+        <div class="dialog-box">
+            <h3>Share calculation</h3>
+            <p class="dialog-info">Copy this URL to share your calculation:</p>
+            <div class="share-url-container">
+                <input type="text" id="shareUrlInput" readonly>
+                <button class="copy-btn" id="copyUrlBtn">Copy</button>
+            </div>
+            <div class="dialog-buttons">
+                <button class="dialog-btn cancel-btn" id="shareCancelBtn">Close</button>
+            </div>
+        </div>    
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
